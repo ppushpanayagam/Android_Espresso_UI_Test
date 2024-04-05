@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_view_width">100dp</dimen>
+    <dimen name="description_size">16sp</dimen>
+    <dimen name="placeholdeR_text_padding">2dp</dimen>
+    <dimen name="background_placeholder_width">2dp</dimen>
+</resources>

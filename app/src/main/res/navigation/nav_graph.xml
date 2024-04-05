@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catFactsMviFragment">
+
+    <fragment
+        android:id="@+id/catFactsMviFragment"
+        android:name="com.example.testapplication.ui.mvi.CatFactsMviFragment"
+        android:label="MVI Fragment"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_goto_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/catFactsMvvmFragment"
+        android:name="com.example.testapplication.ui.mvvm.CatFactsMvvmFragment"
+        android:label="Mvvm Fragment"
+        tools:layout="@layout/fragment_cat_facts">
+
+        <action
+            android:id="@+id/action_goto_imageFragment"
+            app:destination="@id/imageFragment" >
+
+            <argument
+                android:name="imageUrl"
+                app:argType="string"
+                app:nullable="false"
+                android:defaultValue=""/>
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.example.testapplication.ui.ImageFragment"
+        android:label="ImageFragment"
+        tools:layout="@layout/fragment_image">
+
+        <argument
+            android:name="imageUrl"
+            app:argType="string"
+            app:nullable="false"
+            android:defaultValue=""/>
+    </fragment>
+
+    <!-- Add more fragments as needed -->
+
+</navigation>

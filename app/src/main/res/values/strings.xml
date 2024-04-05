@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="bottom_nav_item_1_title">Item 1</string>
+</resources>
